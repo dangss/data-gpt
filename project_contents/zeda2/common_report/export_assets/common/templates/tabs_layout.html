@@ -1,0 +1,43 @@
+<div class="tabs" id="{{context.id}}">
+    {% if context.text is defined %}
+        <div class="title">{{context.text}}</div>
+    {% endif %}
+
+    {% set active_id = context.id %}
+
+    <div class="group-btn-tab">
+        {% for context in context.tabs %}
+        <button id="btn-{{context.id}}" onclick='handleChangeTabsLayout("{{context.id}}", "{{active_id}}")' class="btn-tab btn-tab-{{active_id}}">{{context.text}}</button>
+        {% endfor %}
+    </div>
+
+    <div class="content-select-tabs">
+        {% for context in context.data recursive %}
+        <div class="item-tabs-{{active_id}}" style="display: none;" id="{{context.id}}">
+            {% if context.type == 'table' %}
+                {% include 'table_layout.html' ignore missing with context %}
+    
+            {% elif context.type == 'stack' %}
+                {% include 'stack_layout.html' ignore missing with context %}
+      
+            {% elif context.type == 'html' %}
+                {% include 'html_layout.html' ignore missing with context %}
+    
+            {% elif context.type == 'plotly_chart' %}
+                {% include 'plotly_chart_layout.html' ignore missing with context %}
+
+            {% elif context.type == 'wordcloud' %}
+                {% include 'wordcloud_layout.html' ignore missing with context %}
+            
+            {% elif context.type == 'tabs' %}
+                {% include 'tabs_layout.html' ignore missing with context %}
+            
+            {% elif context.type == 'select_dropdown' %}
+                {% include 'select_dropdown_layout.html' ignore missing with context %}
+            {% endif %}
+        </div>
+        {% endfor %}
+    </div>
+
+</div>
+<script>handleChangeTabsLayout("{{context.default}}", "{{context.id}}")</script>

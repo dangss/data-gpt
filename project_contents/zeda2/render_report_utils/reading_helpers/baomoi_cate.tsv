@@ -1,0 +1,41 @@
+id	parent_id	name	note
+33	0	Đời sống	
+45	0	Kinh tế	Thị trường, tài chính, kinh tế, doanh nghiệp
+52	0	Giải trí	Showbiz, âm nhạc, phim ảnh...
+53	0	Công nghệ	Khoa học tự nhiên, game, mobile, máy tính...
+54	0	Văn hóa	Thời trang, du lịch, ẩm thực, phong cách sống
+55	0	Thể thao	Thể thao, bóng đá, quần vợt...
+58	0	Pháp luật	Vụ án hình sự, an ninh trật tự
+59	0	Giáo dục	Đào tạo, thi cử, học bổng
+79	0	Khoa học	
+119	0	Thế giới	Phân tích an ninh, quân sự, kinh tế quốc tế
+121	0	Xã hội	Thời sự xã hội trong nước và quốc tế
+145	0	Xe cộ	Chơi xe, động cơ, máy móc...
+147	0	Nhà đất	Xây dựng, bất động sản, kiến trúc
+82	33	Sức khỏe - Y tế	Sức khỏe, gia đình, giới tính, tư vấn làm đẹp
+138	33	Dinh dưỡng - Làm đẹp	
+139	33	Tình yêu - Hôn nhân	
+7	45	Kinh doanh	
+47	45	Lao động - Việc làm	
+126	45	Tài chính	
+127	45	Chứng khoán	
+71	52	Âm nhạc	
+72	52	Thời trang	
+132	52	Điện ảnh - Truyền hình	
+76	53	CNTT - Viễn thông	
+136	53	Thiết bị - Phần cứng	
+15	54	Nghệ thuật	
+84	54	Ẩm thực	
+137	54	Du lịch	
+86	55	Bóng đá quốc tế	
+87	55	Bóng đá Việt Nam	
+88	55	Quần vợt	
+104	58	Hình sự - Dân sự	
+141	58	An ninh - Trật tự	
+107	59	Học bổng - Du học	
+108	59	Đào tạo - Thi cử	
+3	121	Môi trường - Khí hậu	
+4	121	Giao thông	
+144	121	Thời sự	
+148	147	Quản lý - Quy hoạch	
+150	147	Không gian - Kiến trúc	

@@ -1,0 +1,114 @@
+{% if context.layout == 'h' %}
+
+<div class="navBar" id="navBar" style="display: block !important">
+	<img src="{{context.logo}}" />
+	<ul class="listMenu">
+		{% for value in context.menu %} {% if value.level == 0 %}
+		<li
+			class="nav navItem navItem-{{value.id}}"
+			onclick='handleScrollToEle("{{value.id}}")'
+			id="navItem-{{value.id}}"
+			data-toggle="tooltip"
+			data-placement="top"
+			title="{{value.text}}"
+		>
+			{% if value.text|length > 19 %} {{value.text[0:19]}}... {% else %}
+			{{value.text}} {% endif %}
+		</li>
+		{% endif %} {% if value.level == 1 %}
+		<li
+			class="nav navItemLevel1 navItem-{{value.id}}"
+			onclick='handleScrollToEle("{{value.id}}")'
+			id="navItem-{{value.id}}"
+			data-toggle="tooltip"
+			data-placement="top"
+			title="{{value.text}}"
+		>
+			{% if value.text|length > 19 %} {{value.text[0:19]}}... {% else %}
+			{{value.text}} {% endif %}
+		</li>
+		{% endif %} {% if value.level == 2 %}
+		<li
+			class="nav navItemLevel2 navItem-{{value.id}}"
+			onclick='handleScrollToEle("{{value.id}}")'
+			id="navItem-{{value.id}}"
+			data-placement="top"
+			data-toggle="tooltip"
+			title="{{value.text}}"
+		>
+			{% if value.text|length > 19 %} {{value.text[0:19]}}... {% else %}
+			{{value.text}} {% endif %}
+		</li>
+		{% endif %} {% endfor %}
+	</ul>
+</div>
+
+{% else %}
+
+<div class="navBar" id="navBar" style="display: none !important">
+	<img src="{{context.logo}}" />
+	<ul class="listMenu">
+		{% for value in context.menu %} {% if value.level == 0 %}
+		<li
+			class="nav navItem navItem-{{value.id}}"
+			onclick='handleScrollToEle("{{value.id}}")'
+			id="navItem-{{value.id}}"
+			data-toggle="tooltip"
+			data-placement="top"
+			title="{{value.text}}"
+		>
+			{% if value.text|length > 19 %} {{value.text[0:19]}}... {% else %}
+			{{value.text}} {% endif %}
+		</li>
+		{% endif %} {% if value.level == 1 %}
+		<li
+			class="nav navItemLevel1 navItem-{{value.id}}"
+			onclick='handleScrollToEle("{{value.id}}")'
+			id="navItem-{{value.id}}"
+			data-toggle="tooltip"
+			data-placement="top"
+			title="{{value.text}}"
+		>
+			{% if value.text|length > 19 %} {{value.text[0:19]}}... {% else %}
+			{{value.text}} {% endif %}
+		</li>
+		{% endif %} {% if value.level == 2 %}
+		<li
+			class="nav navItemLevel2 navItem-{{value.id}}"
+			onclick='handleScrollToEle("{{value.id}}")'
+			id="navItem-{{value.id}}"
+			data-toggle="tooltip"
+			data-placement="top"
+			title="{{value.text}}"
+		>
+			{% if value.text|length > 19 %} {{value.text[0:19]}}... {% else %}
+			{{value.text}} {% endif %}
+		</li>
+		{% endif %} {% endfor %}
+	</ul>
+</div>
+
+{% endif %}
+
+<!-- for ver -->
+
+{% if context.layout == 'v' %}
+
+<div class="navBarVer" id="navBarVer" style="display: block !important">
+	<ul class="navBarVerList" id="navBarVerList">
+		<img
+			class="logoNavBarVer"
+			src="https://res.cloudinary.com/uit-hcm-vn/image/upload/v1675322438/logo_bsc5zt.png"
+		/>
+	</ul>
+</div>
+{% else %}
+<div class="navBarVer" id="navBarVer" style="display: none !important">
+	<ul class="navBarVerList" id="navBarVerList">
+		<img
+			class="logoNavBarVer"
+			src="https://res.cloudinary.com/uit-hcm-vn/image/upload/v1675322438/logo_bsc5zt.png"
+		/>
+	</ul>
+</div>
+{% endif %}

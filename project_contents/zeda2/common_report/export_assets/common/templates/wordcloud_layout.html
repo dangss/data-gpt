@@ -1,0 +1,9 @@
+<div id="{{context.id}}">
+	{% if context.text is defined %}
+	<div class="title">{{context.text}}</div>
+	{% endif %}
+</div>
+
+<script>
+	handleLoadWordcloud("{{context.id}}", {{context.data}})
+</script>

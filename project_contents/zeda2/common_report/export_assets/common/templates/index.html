@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/plotly.js/2.24.2/plotly.min.js"
+			integrity="sha512-dAXqGCq94D0kgLSPnfvd/pZpCMoJQpGj2S2XQmFQ9Ay1+96kbjss02ISEh+TBNXMggGg/1qoMcOHcxg+Op/Jmw=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		></script>
+
+		<script
+			src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+			integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+			crossorigin="anonymous"
+		></script>
+
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+			integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+			crossorigin="anonymous"
+		></script>
+
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+			integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+			crossorigin="anonymous"
+		/>
+
+		<script src="https://d3js.org/d3.v3.min.js"></script>
+		<script src="https://rawgit.com/jasondavies/d3-cloud/master/build/d3.layout.cloud.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+
+		<link rel="icon" href="{{context.logo}}" type="image/icon type" />
+		{% include 'styles.html' %}{% include 'header.html' %}
+
+		<title>{{context.title}}</title>
+	</head>
+	<body>
+		<div class="root">
+			<div id="content" class="content" style="margin-left: 300px !important">
+				{% if context.menu|length > 0 %} {% include 'navbar.html' %}
+				<div
+					style="
+						display: flex;
+						margin-right: 40px;
+						flex-direction: row-reverse;
+						align-items: center;
+						margin-top: 20px;
+					"
+				>
+					{% if context.layout == 'h' %}
+					<input
+						type="checkbox"
+						id="hor"
+						onchange="handleChangeLayoutReport({{context.menu}}, 'hor')"
+						checked
+						name="hor"
+						value="hor"
+					/>
+
+					{% else %}
+					<input
+						type="checkbox"
+						id="hor"
+						onchange="handleChangeLayoutReport({{context.menu}}, 'hor')"
+						name="hor"
+						value="hor"
+					/>
+
+					{% endif %}
+
+					<label style="margin-left: 20px !important" for="hor">
+						Left Menu Bar</label
+					><br />
+
+					{% if context.layout == 'v' %}
+					<input
+						type="checkbox"
+						id="ver"
+						checked
+						onchange="handleChangeLayoutReport({{context.menu}}, 'ver')"
+						name="ver"
+						value="ver"
+					/>
+
+					{% else %}
+					<input
+						type="checkbox"
+						id="ver"
+						name="ver"
+						onchange="handleChangeLayoutReport({{context.menu}}, 'ver')"
+						value="ver"
+					/>
+
+					{% endif %}
+					<label for="ver"> Top Menu Bar</label><br />
+				</div>
+
+				{% endif %}
+
+				<!-- loop for render data -->
+				{% for context in context.data %}
+				<!-- case html layout -->
+				{% if context.type == 'html' %}
+				<!-- include -->
+				{% include 'html_layout.html' ignore missing with context %}
+
+				<!-- else -->
+				{% elif context.type == 'table'%}
+				<!-- include -->
+				{% include 'table_layout.html' ignore missing with context %}
+
+				<!-- else -->
+				{% elif context.type == 'plotly_chart' %}
+				<!-- include -->
+				{% include 'plotly_chart_layout.html' ignore missing with context %}
+
+				<!-- else -->
+				{% elif context.type == 'select_dropdown' %}
+				<!-- include -->
+				{% include 'select_dropdown_layout.html' ignore missing with context %}
+
+				<!-- else -->
+				{% elif context.type == 'wordcloud' %}
+				<!-- include -->
+				{% include 'wordcloud_layout.html' ignore missing with context %}
+
+				<!-- else -->
+				{% elif context.type == 'tabs' %}
+				<!-- include -->
+				{% include 'tabs_layout.html' ignore missing with context %}
+
+				<!-- else -->
+				{% else %}
+				<!-- include -->
+				{% include 'stack_layout.html' ignore missing with context %}
+
+				<!-- endif -->
+				{% endif %}
+
+				<!-- endloop -->
+				{% endfor %}
+			</div>
+		</div>
+	</body>
+
+	{% if context.layout == 'v' %} {% include 'scriptLayout.html' %} {% endif %}
+	{% include 'scripts.html' %}
+</html>

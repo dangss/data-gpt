@@ -1,0 +1,13 @@
+<script>
+	/*allow drop down for menu  */
+	$(document).ready(function () {
+		if ($("[rel=tooltip]").length) {
+			$("[rel=tooltip]").tooltip();
+		}
+	});
+
+	$(".dropdown").on("click", function () {
+		$(".dropdown").addClass("open");
+	});
+
+</script>

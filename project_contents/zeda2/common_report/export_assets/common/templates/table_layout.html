@@ -1,0 +1,23 @@
+<div id="{{context.id}}">
+	{% if context.text is defined %}
+	<div class="title">{{context.text}}</div>
+	{% endif %}
+
+	<table class="table">
+		<thead>
+			{% for itemKey in context.data[0] %}
+			<th class="th">{{itemKey}}</th>
+			{% endfor %}
+		</thead>
+
+		<tbody>
+			{% for item in context.data %}
+			<tr class="tr">
+				{% for key in context.data[0] %}
+				<td class="td">{{item[key]}}</td>
+				{% endfor %}
+			</tr>
+			{% endfor %}
+		</tbody>
+	</table>
+</div>

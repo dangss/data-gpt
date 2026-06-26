@@ -1,0 +1,47 @@
+<div id="{{context.id}}">
+    {% if context.text is defined %}
+        <div class="title">{{context.text}}</div>
+    {% endif %} 
+
+    {% set default_id = context.default %}
+    
+    <select  class="select_dropdown" onchange="handleChangeDropdownLayout(this.value,'{{context.id}}')">
+        {% for context in context.options %}
+            <option {% if default_id == context.id %}selected{% endif %} value="{{context.id}}" class="option_dropdown">{{context.text}}</option>
+        {% endfor %}
+    </select>
+
+    {% set active_id = context.id %}
+
+    <div class="content-select-dropdown">
+        {% for context in context.data recursive %}
+        <div class="item-dropdown-{{active_id}}" style="display: none;" id="{{context.id}}">
+            {% if context.type == 'table' %}
+                {% include 'table_layout.html' ignore missing with context %}
+    
+            {% elif context.type == 'stack' %}
+                {% include 'stack_layout.html' ignore missing with context %}
+      
+            {% elif context.type == 'html' %}
+                {% include 'html_layout.html' ignore missing with context %}
+    
+            {% elif context.type == 'plotly_chart' %}
+                {% include 'plotly_chart_layout.html' ignore missing with context %}
+
+            {% elif context.type == 'wordcloud' %}
+                {% include 'wordcloud_layout.html' ignore missing with context %}
+            
+            {% elif context.type == 'tabs' %}
+                {% include 'tabs_layout.html' ignore missing with context %}
+            
+            {% elif context.type == 'select_dropdown' %}
+                {% include 'select_dropdown_layout.html' ignore missing with context %}
+           
+            {% endif %}
+        </div>
+        {% endfor %}
+    </div>
+
+    
+</div>
+<script>handleChangeDropdownLayout("{{context.default}}","{{context.id}}")</script>

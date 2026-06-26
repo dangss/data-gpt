@@ -1,0 +1,54 @@
+<script>
+
+	const navBarVer = document.getElementById("navBarVer");
+	const navBar = document.getElementById("navBar");
+	const content = document.getElementById("content");
+	let newMenuVer = handleFilterMenuForVerLayout({{context.menu}});
+
+	navBar.style.setProperty("display", "none", "important");
+	navBarVer.style.setProperty("display", "block", "important");
+	content.style.setProperty("margin-left", "40px", "important");
+	content.style.setProperty("margin-right", "40px", "important");
+	content.style.setProperty("margin-top", "90px", "important");
+
+	const listVerMenu = document.getElementById("navBarVerList");
+
+	for (let i = 0; i < newMenuVer.length; i++) {
+		let dropdownItem = null;
+
+		if (newMenuVer[i].children.length > 0) {
+			let listChildren = "";
+
+			for (let j = 0; j < newMenuVer[i].children.length; j++) {
+				listChildren += `<a class="dropdown-item" onclick='handleScrollToEle("${newMenuVer[i].children[j].id}")'>
+							${newMenuVer[i].children[j].text}
+						</a>`;
+			}
+
+			dropdownItem = `<div class="dropdown">
+						<button
+							class="btn btn-secondary dropdown-toggle"
+							type="button"
+							data-toggle="dropdown"
+							aria-haspopup="true"
+							aria-expanded="false"
+						>
+							${newMenuVer[i].text}
+						</button>
+
+						<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+							${listChildren}
+						</div>
+					</div>`;
+		} else {
+			dropdownItem = `<button
+					class="primary"
+					onclick='handleScrollToEle("${newMenuVer[i].id}")'
+				>
+					${newMenuVer[i].text}
+				</button>`;
+		}
+
+		listVerMenu.innerHTML += dropdownItem;
+	}
+</script>

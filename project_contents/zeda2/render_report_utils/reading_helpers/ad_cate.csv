@@ -1,0 +1,348 @@
+﻿CategoryId,Category,MainCate,Type,SubCate Group
+20001,Nhà hàng & quán,Nhà hàng & quán,Main cate,
+20002,Nhà hàng,Nhà hàng & quán,Sub category 1,
+20003,Nhà hàng gọi món,Nhà hàng & quán,Sub category 2,20002
+20004,Nhà hàng buffet,Nhà hàng & quán,Sub category 2,20002
+20005,Fast food + Pizza,Nhà hàng & quán,Sub category 2,20002
+20006,Quán ăn bình dân,Nhà hàng & quán,Sub category 2,20002
+20007,Quán nước,Nhà hàng & quán,Sub category 1,
+20008,Trà sữa,Nhà hàng & quán,Sub category 2,20007
+20009,Tiệm kem,Nhà hàng & quán,Sub category 2,20007
+20010,Tiệm bánh,Nhà hàng & quán,Sub category 2,20007
+20011,Tiệm cafe,Nhà hàng & quán,Sub category 2,20007
+20012,Bất động sản,Bất động sản,Main cate,
+20013,Công ty đầu tư địa ốc,Bất động sản,Sub category 1,20012
+20014,Môi giới & mua bán bất động sản,Bất động sản,Sub category 1,20012
+20323,Môi giới & mua bán đất,Bất động sản,Sub category 2,20014
+20324,Môi giới & mua bán nhà,Bất động sản,Sub category 2,20014
+20325,Môi giới & mua bán chung cư căn hộ,Bất động sản,Sub category 2,20014
+20334,Công ty môi giới & mua bán BĐS,Bất động sản,Sub category 2,20014
+20015,Dịch vụ chuyển nhà,Bất động sản,Sub category 1,20012
+20016,Quản lý & cho thuê văn phòng,Bất động sản,Sub category 1,20012
+20017,Ứng dụng + website cho thuê/mua bán BĐS,Bất động sản,Sub category 1,20012
+20018,Dự Án BDS,Bất động sản,Sub category 1,20012
+20326,Dự án đất nền,Bất động sản,Sub category 2,20018
+20327,Dự án nhà,Bất động sản,Sub category 2,20018
+20328,Dự án chung cư căn hộ,Bất động sản,Sub category 2,20018
+20329,Cho thuê bất động sản,Bất động sản,Sub category 1,20012
+20330,Cho thuê đất,Bất động sản,Sub category 2,20329
+20331,Cho thuê nhà,Bất động sản,Sub category 2,20329
+20332,Cho thuê chung cư căn hộ,Bất động sản,Sub category 2,20329
+20333,Cho thuê phòng trọ,Bất động sản,Sub category 2,20329
+20019,Chăm sóc làm đẹp & chăm sóc cá nhân,Chăm sóc làm đẹp & chăm sóc cá nhân,Main cate,
+20020,Chăm sóc da,Chăm sóc làm đẹp & chăm sóc cá nhân,Sub category 1,
+20021,Dịch vụ chăm sóc da,Chăm sóc làm đẹp & chăm sóc cá nhân,Sub category 2,20020
+20022,Kem chống nắng,Chăm sóc làm đẹp & chăm sóc cá nhân,Sub category 2,20020
+20023,Xà phòng/ sữa tắm & nước rửa tay,Chăm sóc làm đẹp & chăm sóc cá nhân,Sub category 2,20020
+20024,Chăm sóc Răng Miệng,Chăm sóc làm đẹp & chăm sóc cá nhân,Sub category 1,
+20025,Kem/bàn chải đánh răng,Chăm sóc làm đẹp & chăm sóc cá nhân,Sub category 2,20024
+20026,"Sản phẩm chăm sóc răng, miệng",Chăm sóc làm đẹp & chăm sóc cá nhân,Sub category 2,20024
+20027,Nha khoa,Chăm sóc làm đẹp & chăm sóc cá nhân,Sub category 2,20024
+20028,Chăm sóc tóc,Chăm sóc làm đẹp & chăm sóc cá nhân,Sub category 1,
+20029,Mọc tóc/ đen tóc,Chăm sóc làm đẹp & chăm sóc cá nhân,Sub category 2,20028
+20030,Salon cắt tóc,Chăm sóc làm đẹp & chăm sóc cá nhân,Sub category 2,20028
+20031,Dầu gội & dầu xả,Chăm sóc làm đẹp & chăm sóc cá nhân,Sub category 2,20028
+20032,Dịch vụ làm đẹp,Chăm sóc làm đẹp & chăm sóc cá nhân,Sub category 1,
+20033,Spa,Chăm sóc làm đẹp & chăm sóc cá nhân,Sub category 2,20032
+20034,Thẩm mỹ viện,Chăm sóc làm đẹp & chăm sóc cá nhân,Sub category 2,20032
+20035,Mỹ Phẩm Trang điểm,Chăm sóc làm đẹp & chăm sóc cá nhân,Sub category 2,20032
+20036,Mỹ phẩm làm đẹp da,Chăm sóc làm đẹp & chăm sóc cá nhân,Sub category 2,20032
+20037,Nước hoa,Chăm sóc làm đẹp & chăm sóc cá nhân,Sub category 1,
+20038,Vệ sinh cơ thể,Chăm sóc làm đẹp & chăm sóc cá nhân,Sub category 1,
+20039,"Xịt, lăn, sản phẩm khử mùi",Chăm sóc làm đẹp & chăm sóc cá nhân,Sub category 2,20038
+20040,"Dung dịch, sản phẩm vệ sinh phụ nữ",Chăm sóc làm đẹp & chăm sóc cá nhân,Sub category 2,20038
+20041,Công - Nông nghiệp,Công - Nông nghiệp,Main cate,
+20042,Hóa chất,Công - Nông nghiệp,Sub category 1,
+20043,Năng lượng,Công - Nông nghiệp,Sub category 1,
+20044,Dầu khí,Công - Nông nghiệp,Sub category 2,20042
+20045,Năng lượng tái tạo & năng lượng sạch,Công - Nông nghiệp,Sub category 2,20042
+20046,Hàng hóa & sản xuất công nghiệp,Công - Nông nghiệp,Sub category 1,
+20047,Thiết bị điện tử cho công nghiệp,Công - Nông nghiệp,Sub category 2,20046
+20048,Nhà máy & cơ sở,Công - Nông nghiệp,Sub category 2,20046
+20049,In thương mại & công nghiệp,Công - Nông nghiệp,Sub category 1,
+20050,Thiết bị & dịch vụ an ninh,Công - Nông nghiệp,Sub category 1,
+20051,Thiết bị & dịch vụ khoa học,Công - Nông nghiệp,Sub category 1,
+20052,Văn phòng & thiết bị văn phòng,Công - Nông nghiệp,Sub category 1,
+20053,Xây dựng & bảo dưỡng công trình,Công - Nông nghiệp,Sub category 1,
+20054,"Máy móc, dụng cụ, phụ tùng",Công - Nông nghiệp,Sub category 2,20053
+20055,Giao thầu thương mại,Công - Nông nghiệp,Sub category 2,20053
+20056,HVAC & Kiểm soát khí hậu,Công - Nông nghiệp,Sub category 2,20053
+20057,Vật liệu xây dựng,Công - Nông nghiệp,Sub category 2,20053
+20058,Nông - Lâm - Ngư nghiệp,Công - Nông nghiệp,Sub category 1,
+20059,Phân bón,Công - Nông nghiệp,Sub category 2,20058
+20060,Thuốc trừ sâu,Công - Nông nghiệp,Sub category 2,20058
+20061,"Thức ăn chăn nuôi, thủy sản, thuốc thú y",Công - Nông nghiệp,Sub category 2,20058
+20062,Giống Động - Thực vật,Công - Nông nghiệp,Sub category 2,20058
+20063,Gia đình & cộng đồng,Gia đình & cộng đồng,Main cate,
+20064,Hội nhóm/ Đoàn thể,Gia đình & cộng đồng,Sub category 1,
+20065,Nhóm thiện nguyện/ tình nguyện,Gia đình & cộng đồng,Sub category 2,20064
+20066,Tin tức hội nhóm,Gia đình & cộng đồng,Sub category 2,20064
+20067,Trẻ nhỏ & nuôi dạy,Gia đình & cộng đồng,Sub category 1,
+20068,Cách dạy con cái,Gia đình & cộng đồng,Sub category 2,20067
+20069,Chăm sóc và vệ sinh trẻ nhỏ,Gia đình & cộng đồng,Sub category 2,20067
+20070,Kế hoạch hóa gia đình,Gia đình & cộng đồng,Sub category 1,
+20071,Bao cao su & thuốc ngừa thai,Gia đình & cộng đồng,Sub category 2,20070
+20072,Sức khỏe sinh sản & tình dục,Gia đình & cộng đồng,Sub category 2,20070
+20073,Hôn nhân (Wedding),Gia đình & cộng đồng,Sub category 1,
+20074,Thiệp cưới,Gia đình & cộng đồng,Sub category 2,20073
+20075,Dịch vụ cưới,Gia đình & cộng đồng,Sub category 2,20073
+20076,Thú cưng,Gia đình & cộng đồng,Sub category 1,
+20077,Mua bán thú cưng,Gia đình & cộng đồng,Sub category 2,20076
+20078,Thức ăn và đồ dùng thú cưng,Gia đình & cộng đồng,Sub category 2,20076
+20079,Đồ chơi,Gia đình & cộng đồng,Sub category 1,
+20080,Dịch vụ Internet & Viễn thông,Dịch vụ Internet & Viễn thông,Main cate,
+20081,Gói dịch vụ điện thoại & SIM,Dịch vụ Internet & Viễn thông,Sub category 1,
+20082,Internet và các dịch vụ trực tuyến,Dịch vụ Internet & Viễn thông,Sub category 1,
+20083,Quảng cáo Website,Dịch vụ Internet & Viễn thông,Sub category 2,20082
+20084,Dịch vụ lưu trữ (hosting) + domain,Dịch vụ Internet & Viễn thông,Sub category 2,20082
+20085,Dịch vụ thiết kế và phát triển website,Dịch vụ Internet & Viễn thông,Sub category 2,20082
+20086,Email và tin nhắn,Dịch vụ Internet & Viễn thông,Sub category 2,20082
+20087,Gói dịch vụ Internet,Dịch vụ Internet & Viễn thông,Sub category 2,20082
+20088,Mạng xã hội và cộng đồng,Dịch vụ Internet & Viễn thông,Sub category 1,
+20089,Hẹn hò trực tuyến,Dịch vụ Internet & Viễn thông,Sub category 2,20088
+20090,"Mạng chia sẻ content (Video, photo, blog etc.)",Dịch vụ Internet & Viễn thông,Sub category 2,20088
+20091,Dịch vụ truyền hình,Dịch vụ Internet & Viễn thông,Sub category 1,
+20092,Truyền hình cáp,Dịch vụ Internet & Viễn thông,Sub category 2,20091
+20093,Truyền hình vệ tinh,Dịch vụ Internet & Viễn thông,Sub category 2,20091
+20094,Ứng dụng (Appication) Internet,Dịch vụ Internet & Viễn thông,Sub category 1,
+20095,Games,Dịch vụ Internet & Viễn thông,Sub category 1,
+20096,Luật pháp & chính phủ,Luật pháp & chính phủ,Main cate,
+20097,Dịch vụ luật công cộng,Luật pháp & chính phủ,Sub category 1,
+20098,Cơ quan chính quyền nhà nước,Luật pháp & chính phủ,Sub category 1,
+20099,Lữ hành & du lịch,Lữ hành & du lịch,Main cate,
+20100,Hàng không,Lữ hành & du lịch,Sub category 1,
+20101,Hãng máy bay,Lữ hành & du lịch,Sub category 2,20100
+20102,Đại lý/ phòng vé máy bay,Lữ hành & du lịch,Sub category 2,20100
+20103,Dịch vụ lữ hành,Lữ hành & du lịch,Sub category 1,
+20104,Quảng cáo lữ hành,Lữ hành & du lịch,Sub category 2,20103
+20105,Dịch vụ visa,Lữ hành & du lịch,Sub category 2,20103
+20106,Công ty lữ hành,Lữ hành & du lịch,Sub category 2,20103
+20107,Khách sạn/ Nhà nghỉ,Lữ hành & du lịch,Sub category 1,
+20108,Chủ doanh nghiệp,Lữ hành & du lịch,Sub category 2,20107
+20109,Dịch vụ/ trang web đặt phòng,Lữ hành & du lịch,Sub category 2,20107
+20110,Truyền thông & ấn phẩm du lịch,Lữ hành & du lịch,Sub category 1,
+20111,Vận tải & tham quan,Lữ hành & du lịch,Sub category 1,
+20112,Dịch vụ + ứng dụng thuê gọi xe,Lữ hành & du lịch,Sub category 2,20111
+20113,Taxi,Lữ hành & du lịch,Sub category 2,20111
+20114,Dịch vụ xe công cộng,Lữ hành & du lịch,Sub category 2,20111
+20115,Dịch vụ định cư,Lữ hành & du lịch,Sub category 1,
+20116,Đồ dùng du lịch dã ngoại,Lữ hành & du lịch,Sub category 1,
+20117,Thiết bị điện tử & phần mềm,Thiết bị điện tử & phần mềm,Main cate,
+20118,Loa & Stereo,Thiết bị điện tử & phần mềm,Sub category 1,
+20119,TV,Thiết bị điện tử & phần mềm,Sub category 1,
+20120,Điện gia dụng,Thiết bị điện tử & phần mềm,Sub category 1,
+20121,Điện lạnh,Thiết bị điện tử & phần mềm,Sub category 1,
+20122,Hệ thống và phần cứng máy tính,Thiết bị điện tử & phần mềm,Sub category 1,
+20123,Máy tính xách tay,Thiết bị điện tử & phần mềm,Sub category 2,20122
+20124,Máy tính để bàn,Thiết bị điện tử & phần mềm,Sub category 2,20122
+20125,Thiết bị cung cấp mạng,Thiết bị điện tử & phần mềm,Sub category 2,20122
+20126,Phần mềm offline trên máy tính,Thiết bị điện tử & phần mềm,Sub category 1,
+20127,Phụ kiện máy tính,Thiết bị điện tử & phần mềm,Sub category 1,
+20128,Điện thoại di động & phụ kiện,Thiết bị điện tử & phần mềm,Sub category 1,
+20129,Ảnh và video,Thiết bị điện tử & phần mềm,Sub category 1,
+20130,Máy ảnh kỹ thuật số,Thiết bị điện tử & phần mềm,Sub category 2,20129
+20131,Máy quay video,Thiết bị điện tử & phần mềm,Sub category 2,20129
+20132,Phụ kiện ảnh và video,Thiết bị điện tử & phần mềm,Sub category 2,20129
+20133,"Nhà, nội thất và gia dụng","Nhà, nội thất và gia dụng",Main cate,
+20134,Thiết bị an ninh trong nhà,"Nhà, nội thất và gia dụng",Sub category 1,
+20135,Chăn ra gối nệm,"Nhà, nội thất và gia dụng",Sub category 1,
+20136,Đèn & chiếu sáng,"Nhà, nội thất và gia dụng",Sub category 1,
+20137,Sản phẩm vệ sinh nhà cửa,"Nhà, nội thất và gia dụng",Sub category 1,
+20138,Bột giặt/ nước xả vải,"Nhà, nội thất và gia dụng",Sub category 2,20137
+20139,Nước rửa chén,"Nhà, nội thất và gia dụng",Sub category 2,20137
+20140,Nước lau nhà,"Nhà, nội thất và gia dụng",Sub category 2,20137
+20141,Sản phẩm khử mùi cho nhà,"Nhà, nội thất và gia dụng",Sub category 2,20137
+20142,Nhà bếp & phòng ăn,"Nhà, nội thất và gia dụng",Sub category 1,
+20143,"Sân, vườn","Nhà, nội thất và gia dụng",Sub category 1,
+20144,Dịch vụ sữa chữa / xây nhà,"Nhà, nội thất và gia dụng",Sub category 1,
+20145,Nội thất trang trí,"Nhà, nội thất và gia dụng",Sub category 1,
+20146,Ô tô & xe cộ,Ô tô & xe cộ,Main cate,
+20147,Xe ô tô,Ô tô & xe cộ,Sub category 1,
+20148,Xe gắn máy,Ô tô & xe cộ,Sub category 1,
+20149,Bộ phận & phụ kiện xe cộ,Ô tô & xe cộ,Sub category 1,
+20151,Sửa chữa và bảo dưỡng xe,Ô tô & xe cộ,Sub category 1,
+20320,Xe tải,Ô tô & xe cộ,Sub category 1,
+20321,Xe chuyên dụng,Ô tô & xe cộ,Sub category 1,
+20322,Xe du lịch,Ô tô & xe cộ,Sub category 1,
+20152,Sức khỏe,Sức khỏe,Main cate,
+20153,Công nghệ gen,Sức khỏe,Sub category 1,
+20154,Dịch vụ chăm sóc sức khỏe,Sức khỏe,Sub category 1,
+20155,Bệnh viện & phòng khám,Sức khỏe,Sub category 2,20154
+20156,Dịch vụ chuẩn đoán Y khoa,Sức khỏe,Sub category 2,20154
+20157,Dịch vụ sức khỏe tâm lý,Sức khỏe,Sub category 2,20154
+20158,Dịch vụ thị lực,Sức khỏe,Sub category 2,20154
+20159,Liệu pháp tăng cường sức khỏe,Sức khỏe,Sub category 2,20154
+20160,Phẩu thuật thẩm mỹ,Sức khỏe,Sub category 2,20154
+20161,Phục hồi chức năng,Sức khỏe,Sub category 2,20154
+20162,Thuốc thay thế & thuốc có nguồn gốc thiên nhiên,Sức khỏe,Sub category 2,20154
+20163,Dinh dưỡng & ăn kiêng,Sức khỏe,Sub category 1,
+20164,TPCN dành cho dinh dưỡng (giảm cân - tăng cân),Sức khỏe,Sub category 2,20163
+20165,"Chế độ & chương trình dinh dưỡng, ăn kiêng",Sức khỏe,Sub category 2,20163
+20166,Thuốc & dược phẩm,Sức khỏe,Sub category 1,
+20167,"Thiết bị, dụng cụ Y tế",Sức khỏe,Sub category 1,
+20168,TPCN,Sức khỏe,Sub category 1,
+20169,TPCN Trĩ,Sức khỏe,Sub category 2,20168
+20170,TPCN Viêm gan,Sức khỏe,Sub category 2,20168
+20171,TPCN Viêm khớp,Sức khỏe,Sub category 2,20168
+20172,TPCN Xoang,Sức khỏe,Sub category 2,20168
+20173,TPCN Đường huyết & bệnh tiểu đường,Sức khỏe,Sub category 2,20168
+20174,TPCN Thính lực,Sức khỏe,Sub category 2,20168
+20175,TPCN Thị lực,Sức khỏe,Sub category 2,20168
+20176,TPCN Rối loạn tiêu hóa,Sức khỏe,Sub category 2,20168
+20177,TPCN Sinh lý,Sức khỏe,Sub category 2,20168
+20178,TPCN Tim,Sức khỏe,Sub category 2,20168
+20179,TPCN Tinh thần,Sức khỏe,Sub category 2,20168
+20180,TPCN Da,Sức khỏe,Sub category 2,20168
+20181,TPCN khác,Sức khỏe,Sub category 2,20168
+20182,Thuốc/ TPCN cho trẻ,Sức khỏe,Sub category 2,20168
+20183,Vitamin & TPCN bổ sung,Sức khỏe,Sub category 2,20168
+20184,Tài chính,Tài chính,Main cate,
+20185,Bảo hiểm,Tài chính,Sub category 1,
+20186,Bảo hiểm nhân thọ,Tài chính,Sub category 2,20185
+20187,Bảo hiểm tài sản,Tài chính,Sub category 2,20185
+20188,Bảo hiểm xe,Tài chính,Sub category 2,20185
+20189,Bảo hiểm Y tế,Tài chính,Sub category 2,20185
+20190,Dịch vụ chuyển tiền,Tài chính,Sub category 1,
+20191,Đầu tư,Tài chính,Sub category 1,
+20192,Chứng khoán,Tài chính,Sub category 2,20191
+20193,Đầu tư khi nghỉ hưu,Tài chính,Sub category 2,20191
+20194,Tiền tệ & ngoại hối,Tài chính,Sub category 2,20191
+20195,Kế toán & kiểm toán,Tài chính,Sub category 1,
+20196,Ngân hàng,Tài chính,Sub category 1,
+20197,Tín dụng & cho vay,Tài chính,Sub category 1,
+20198,"Trợ cấp, học bổng & hỗ trợ tài chính",Tài chính,Sub category 1,
+20199,Vé số & rút thăm trúng thưởng,Tài chính,Sub category 1,
+20200,Thực phẩm đồ uống,Thực phẩm đồ uống,Main cate,
+20201,Đồ uống,Thực phẩm đồ uống,Sub category 1,
+20202,Thức uống có cồn,Thực phẩm đồ uống,Sub category 2,20201
+20203,Thức uống không cồn,Thực phẩm đồ uống,Sub category 2,20201
+20204,Thực phẩm,Thực phẩm đồ uống,Sub category 1,
+20205,Thực phẩm tươi sống,Thực phẩm đồ uống,Sub category 2,20204
+20206,Thực phẩm đóng hộp,Thực phẩm đồ uống,Sub category 2,20204
+20207,Trái cây,Thực phẩm đồ uống,Sub category 2,20204
+20208,Sữa,Thực phẩm đồ uống,Sub category 1,
+20209,Sữa tươi,Thực phẩm đồ uống,Sub category 2,20208
+20210,Sữa bột,Thực phẩm đồ uống,Sub category 2,20208
+20211,Doanh nghiệp bán lẻ,Doanh nghiệp bán lẻ,Main cate,
+20212,Dịch vụ vận chuyển hàng hóa,Doanh nghiệp bán lẻ,Sub category 1,
+20213,Mua sắm truyền thống,Doanh nghiệp bán lẻ,Sub category 1,
+20214,Siêu thị,Doanh nghiệp bán lẻ,Sub category 2,20213
+20215,Cửa hàng tiện lợi,Doanh nghiệp bán lẻ,Sub category 2,20213
+20216,Cửa hàng điện máy,Doanh nghiệp bán lẻ,Sub category 2,20213
+20217,Mua sắm trực tuyến,Doanh nghiệp bán lẻ,Sub category 1,
+20218,Dịch vụ quà tặng & voucher,Doanh nghiệp bán lẻ,Sub category 1,
+20219,Dịch vụ giao thức ăn,Doanh nghiệp bán lẻ,Sub category 1,
+20220,Dịch vụ giao thực phẩm tươi sống,Doanh nghiệp bán lẻ,Sub category 1,
+20221,Dịch vụ nhận đặt hàng,Doanh nghiệp bán lẻ,Sub category 1,
+20222,"Thể thao, tin tức & giải trí","Thể thao, tin tức & giải trí",Main cate,
+20223,Sách & báo chí,"Thể thao, tin tức & giải trí",Sub category 1,
+20224,Báo chí,"Thể thao, tin tức & giải trí",Sub category 2,20223
+20225,Sách và văn học,"Thể thao, tin tức & giải trí",Sub category 2,20223
+20226,Thông tin & mẹo vặt,"Thể thao, tin tức & giải trí",Sub category 2,20223
+20227,Giải trí & Nghệ thuật,"Thể thao, tin tức & giải trí",Sub category 1,
+20228,Tin tức giải trí & người nổi tiếng,"Thể thao, tin tức & giải trí",Sub category 2,20227
+20229,Gameshow & chương trình truyền hình,"Thể thao, tin tức & giải trí",Sub category 2,20227
+20230,Âm nhạc & dụng cụ âm nhạc,"Thể thao, tin tức & giải trí",Sub category 2,20227
+20231,Phim ảnh,"Thể thao, tin tức & giải trí",Sub category 2,20227
+20232,Phòng triễn lãm/ bảo tàng,"Thể thao, tin tức & giải trí",Sub category 2,20227
+20233,Sự kiện,"Thể thao, tin tức & giải trí",Sub category 1,
+20234,Thể thao,"Thể thao, tin tức & giải trí",Sub category 1,
+20235,"Đồ dùng, trang phục thể thao","Thể thao, tin tức & giải trí",Sub category 2,20234
+20236,Giải trí thể thao,"Thể thao, tin tức & giải trí",Sub category 2,20234
+20237,Phụ kiện thể thao,"Thể thao, tin tức & giải trí",Sub category 2,20234
+20238,Thời trang,Thời trang,Main cate,
+20239,Đồ trang sức,Thời trang,Sub category 1,
+20240,Đồng hồ & phụ kiện,Thời trang,Sub category 2,20239
+20241,Trang sức phong thủy,Thời trang,Sub category 2,20239
+20242,Trang sức làm đẹp,Thời trang,Sub category 2,20239
+20243,Giày dép,Thời trang,Sub category 1,
+20244,Kính mát,Thời trang,Sub category 1,
+20245,Túi xách & ví tiền,Thời trang,Sub category 1,
+20246,Trang phục,Thời trang,Sub category 1,
+20247,Trang phục nam,Thời trang,Sub category 2,20246
+20248,Trang phục nữ,Thời trang,Sub category 2,20246
+20249,Trang phục trẻ em,Thời trang,Sub category 2,20246
+20250,Trang phục cưới,Thời trang,Sub category 2,20246
+20251,Trang phục gia đình,Thời trang,Sub category 2,20246
+20252,Việc làm & giáo dục,Việc làm & giáo dục,Cate cũ,
+20254,Dịch vụ dạy học & gia sư,Việc làm & giáo dục,Cate cũ,20253
+20256,Trường học & đào tạo,Việc làm & giáo dục,Cate cũ,20253
+20307,Giáo dục,Giáo dục,Main cate,
+20253,Giáo dục & đào tạo,Giáo dục,Sub category 1,20307
+20255,Giáo dục ngôn ngữ,Giáo dục,Sub category 2,20253
+20257,Dịch vụ du học,Giáo dục,Sub category 2,20253
+20308,"Nhà trẻ, mầm non",Giáo dục,Sub category 2,20253
+20309,"Trường tiểu học, trung học cơ sở, trung học phổ thông",Giáo dục,Sub category 2,20253
+20310,Đại học và Sau Đại học,Giáo dục,Sub category 2,20253
+20311,Đào tạo kỹ năng mềm,Giáo dục,Sub category 2,20253
+20312,Đào tạo kỹ năng sống,Giáo dục,Sub category 2,20253
+20313,Đào tạo nghề,Giáo dục,Sub category 2,20253
+20314,Đào tạo nghiệp vụ,Giáo dục,Sub category 2,20253
+20315,Giáo dục trực tuyến,Giáo dục,Sub category 2,20253
+20316,Dịch vụ gia sư,Giáo dục,Sub category 2,20253
+20150,Trường dạy lái xe,Giáo dục,Sub category 2,20253
+20319,Khóa học chứng khoán,Giáo dục,Sub category 2,20253
+20260,Sách & văn phòng phẩm,Giáo dục,Sub category 1,20307
+20261,Sách giáo khoa,Giáo dục,Sub category 2,20260
+20262,Tài liệu và sách tham khảo,Giáo dục,Sub category 2,20260
+20263,Văn phòng phẩm,Giáo dục,Sub category 2,20260
+20264,Mỹ phẩm tăng kích cỡ vòng 1,Chăm sóc làm đẹp & chăm sóc cá nhân,Sub category 2,20032
+20274,Chăm sóc sức khỏe người cao tuổi,Gia đình & cộng đồng,Sub category 1,
+20275,Phòng tắm & giặt,"Nhà, nội thất và gia dụng",Sub category 1,
+20276,Phòng khách,"Nhà, nội thất và gia dụng",Sub category 1,
+20277,Xe đạp/ xe điện,Ô tô & xe cộ,Sub category 1,
+20278,Hóa đơn & hóa đơn điện tử,Tài chính,Sub category 1,
+20279,Cửa hàng truyền thống & buôn bán nhỏ lẻ,Doanh nghiệp bán lẻ,Sub category 2,20213
+20280,Dịch vụ in ấn,Doanh nghiệp bán lẻ,Sub category 1,
+20281,Dịch vụ khác,Doanh nghiệp bán lẻ,Sub category 1,
+20282,Quảng cáo nhạc Zing Mp3,"Thể thao, tin tức & giải trí",Sub category 2,20227
+20283,Quảng cáo tin tức Zing News,"Thể thao, tin tức & giải trí",Sub category 2,20227
+20284,Phụ kiện trang trí thời trang,Thời trang,Sub category 1,
+20285,Công ty quảng cáo,Công ty quảng cáo,Main cate,
+20286,Dịch vụ thiết kế sáng tạo quảng cáo,Công ty quảng cáo,Sub category 1,
+20287,Dịch vụ tư vấn chiến lược quảng cáo,Công ty quảng cáo,Sub category 1,
+20288,TPCN Sỏi Thận,Sức khỏe,Sub category 2,20168
+20289,TPCN viêm họng,Sức khỏe,Sub category 2,20168
+20290,Đồ gia dụng,"Nhà, nội thất và gia dụng",Sub category 1,
+20291,Thẩm mỹ viện nâng ngực,Chăm sóc làm đẹp & chăm sóc cá nhân,Sub category 2,20032
+20292,TPCN Phụ khoa,Sức khỏe,Sub category 2,20168
+20293,Trang phục lót,Thời trang,Sub category 2,20246
+20294,Kem bôi trĩ,Sức khỏe,Sub category 2,20166
+20295,TPCN Nội tiết tố,Sức khỏe,Sub category 2,20168
+20296,Sàn giao dịch BĐS,Bất động sản,Sub category 1,20012
+20297,"Giải pháp, phần mềm hỗ trợ kinh doanh",Dịch vụ Internet & Viễn thông,Sub category 1,
+20298,Sim giá rẻ,Dịch vụ Internet & Viễn thông,Sub category 1,
+20299,"TPCN Mỡ máu, mỡ gan",Sức khỏe,Sub category 2,20168
+20300,TPCN Tăng chiều cao,Sức khỏe,Sub category 2,20168
+20301,TPCN Răng miệng,Sức khỏe,Sub category 2,20168
+20302,TPCN Hiếm muộn,Sức khỏe,Sub category 2,20168
+20303,TPCN Tóc,Sức khỏe,Sub category 2,20168
+20304,"TPCN U bướu, Ung thư",Sức khỏe,Sub category 2,20168
+20305,TPCN Tiền liệt tuyến,Sức khỏe,Sub category 2,20168
+20306,Nhà thuốc,Sức khỏe,Sub category 2,20154
+20273,Nhà hàng tiệc cưới,Nhà hàng & quán,Sub category 2,20002
+20317,Tuyển dụng & Việc làm,Tuyển dụng & Việc làm,Main cate,
+20258,Dịch vụ môi giới việc làm,Tuyển dụng & Việc làm,Sub category 1,20317
+20259,Tuyển dụng,Tuyển dụng & Việc làm,Sub category 1,20317
+20318,Nhượng quyền doanh nghiệp,Doanh nghiệp bán lẻ,Sub category 1,20211
+20307,Giáo dục,Giáo dục,Main cate,
+20253,Giáo dục & đào tạo,Giáo dục,Sub category 1,
+20308,"Nhà trẻ, mầm non",Giáo dục & đào tạo,Sub category 2,
+20309,"Trường tiểu học, trung học cơ sở, trung học phổ thông",Giáo dục & đào tạo,Sub category 2,
+20310,Đại học và Sau Đại học,Giáo dục & đào tạo,Sub category 2,
+20311,Đào tạo kỹ năng mềm,Giáo dục & đào tạo,Sub category 2,
+20312,Đào tạo kỹ năng sống,Giáo dục & đào tạo,Sub category 2,
+20313,Đào tạo nghề,Giáo dục & đào tạo,Sub category 2,
+20314,Đào tạo nghiệp vụ,Giáo dục & đào tạo,Sub category 2,
+20315,Giáo dục trực tuyến,Giáo dục & đào tạo,Sub category 2,
+20316,Dịch vụ gia sư,Giáo dục & đào tạo,Sub category 2,
+20255,Giáo dục ngôn ngữ,Giáo dục & đào tạo,Sub category 2,
+20257,Dịch vụ du học,Giáo dục & đào tạo,Sub category 2,
+20150,Trường dạy lái xe,Giáo dục & đào tạo,Sub category 2,
+20260,Sách & văn phòng phẩm,Sách & văn phòng phẩm,Main cate,
+20261,Sách giáo khoa,Sách & văn phòng phẩm,Sub category 1,
+20262,Tài liệu và sách tham khảo,Sách & văn phòng phẩm,Sub category 1,
+20263,Văn phòng phẩm,Sách & văn phòng phẩm,Sub category 1,
+20317,Tuyển dụng & Việc làm,Tuyển dụng & Việc làm,Main cate,
+20258,Dịch vụ môi giới việc làm,Tuyển dụng & Việc làm,Sub category 1,
+20259,Tuyển dụng,Tuyển dụng & Việc làm,Sub category 1,

@@ -1,0 +1,305 @@
+<script>
+	function handleScrollToEle(id) {
+		//action scroll
+		const ele = document.getElementById(id);
+		ele?.scrollIntoView({
+			behavior: "smooth",
+		});
+
+		// action hightlight menu
+		document.querySelectorAll(".nav").forEach((el) => {
+			el.style.color = "black";
+			el.style.fontWeight = "500";
+		});
+		let currId = "navItem-" + id;
+		document.getElementById(currId).style.fontWeight = 900;
+		document.getElementById(currId).style.color = "#3385d9";
+	}
+
+	function handleFilterMenuForVerLayout(dataMenu) {
+		let totalItem = [];
+
+		let newDataMenu = [];
+
+		const minLevel = dataMenu.reduce(
+			(min, item) => (item.level < min ? item.level : min),
+			Infinity
+		);
+
+		for (let i = 0; i < dataMenu.length; i++) {
+			if (dataMenu[i].level === minLevel) {
+				totalItem.push({
+					text: dataMenu[i].text,
+					level: dataMenu[i].level,
+					id: dataMenu[i].id,
+					index: i,
+					children: [],
+				});
+			}
+		}
+
+		for (let i = 0; i < totalItem.length; i++) {
+			if (i < totalItem.length - 1) {
+				const indexNextItem = totalItem[i + 1].index;
+
+				if (indexNextItem) {
+					let newItem = {
+						text: totalItem[i].text,
+						level: totalItem[i].level,
+						id: totalItem[i].id,
+						children: [],
+					};
+
+					const range = indexNextItem - totalItem[i].index;
+
+					for (let j = 1; j < range; j++) {
+						newItem.children.push({
+							text: dataMenu[totalItem[i].index + j].text,
+							level: dataMenu[totalItem[i].index + j].level,
+							id: dataMenu[totalItem[i].index + j].id,
+						});
+					}
+
+					newDataMenu.push(newItem);
+				}
+			}
+
+			if (i === totalItem.length - 1) {
+				let newItem = {
+					text: totalItem[i].text,
+					level: totalItem[i].level,
+					id: totalItem[i].id,
+					children: [],
+				};
+
+				const range = dataMenu.length - totalItem[i].index;
+
+				for (let j = 1; j < range; j++) {
+					newItem.children.push({
+						text: dataMenu[totalItem[i].index + j].text,
+						level: dataMenu[totalItem[i].index + j].level,
+						id: dataMenu[totalItem[i].index + j].id,
+					});
+				}
+
+				newDataMenu.push(newItem);
+			}
+		}
+
+		return newDataMenu;
+	}
+
+	function handleChangeLayoutReport(dataMenu, id) {
+		document.getElementById("ver").checked = false;
+		document.getElementById("hor").checked = false;
+
+		document.getElementById(id).checked = true;
+		let isVer = document.getElementById("ver").checked;
+		let isHor = document.getElementById("hor").checked;
+
+		const navBarVer = document.getElementById("navBarVer");
+		const navBar = document.getElementById("navBar");
+		const content = document.getElementById("content");
+		let newMenuVer = handleFilterMenuForVerLayout(dataMenu);
+
+		if (isVer) {
+			document.getElementById("navBarVerList").innerHTML = "";
+			document.getElementById("hor").checked = false;
+			navBar.style.setProperty("display", "none", "important");
+			navBarVer.style.setProperty("display", "block", "important");
+			content.style.setProperty("margin-left", "40px", "important");
+			content.style.setProperty("margin-right", "40px", "important");
+			content.style.setProperty("margin-top", "90px", "important");
+
+			const listVerMenu = document.getElementById("navBarVerList");
+
+			for (let i = 0; i < newMenuVer.length; i++) {
+				let dropdownItem = null;
+
+				if (newMenuVer[i].children.length > 0) {
+					let listChildren = "";
+
+					for (let j = 0; j < newMenuVer[i].children.length; j++) {
+						listChildren += `<a class="dropdown-item" onclick='handleScrollToEle("${newMenuVer[i].children[j].id}")'>
+							${newMenuVer[i].children[j].text}
+						</a>`;
+					}
+
+					dropdownItem = `<div class="dropdown" id="dropdown-${newMenuVer[i].id}">
+						<button
+							class="btn btn-secondary dropdown-toggle"
+							type="button"
+							data-toggle="dropdown"
+							aria-haspopup="true"
+							aria-expanded="false"
+
+						>
+							${newMenuVer[i].text}
+						</button>
+
+						<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+							${listChildren}
+						</div>
+					</div>`;
+				} else {
+					dropdownItem = `<button
+					class="primary"
+					onclick='handleScrollToEle("${newMenuVer[i].id}")'
+				>
+					${newMenuVer[i].text}
+				</button>`;
+				}
+
+				listVerMenu.innerHTML += dropdownItem;
+			}
+
+			return;
+		}
+
+		if (isHor) {
+			document.getElementById("ver").checked = false;
+			newMenuVer = [];
+			navBarVer.style.setProperty("display", "none", "important");
+			navBar.style.setProperty("display", "block", "important");
+			navBar.style.setProperty("width", "250px", "important");
+			content.style.setProperty("margin-left", "300px", "important");
+			content.style.setProperty("margin-top", "20px", "important");
+			document.getElementById("navBarVerList").innerHTML = "";
+		}
+	}
+
+	function handleLoadWordcloud(id, data) {
+		const words = data;
+
+		function showWords(sel) {
+			sel.update(words);
+			// setTimeout(function() { showWords(sel)}, 4000)
+		}
+
+		var myWordCloud = wordCloud("#" + id, words);
+
+		showWords(myWordCloud);
+	}
+
+	function wordCloud(selector, words) {
+		var fill = d3.scale.category20();
+
+		var fontSizeScale = d3.scale
+			.pow()
+			.exponent(1)
+			.domain([0, 1])
+			.range([6, 92]);
+		var maxSize = d3.max(words, function (d) {
+			return d.size;
+		});
+
+		//Construct the word cloud's SVG element
+		var svg = d3
+			.select(selector)
+			.append("svg")
+			.attr("width", 900)
+			.attr("height", 500)
+			.append("g")
+			.attr("transform", "translate(" + 900 / 2 + "," + 500 / 2 + ")");
+
+		//Draw the word cloud
+		function draw(words) {
+			var cloud = svg.selectAll("g text").data(words, function (d) {
+				return d.text;
+			});
+
+			//Entering words
+			cloud
+				.enter()
+				.append("text")
+				.style("fill", function (d, i) {
+					return fill(i);
+				})
+				.attr("text-anchor", "middle")
+				.attr("font-size", 1)
+				.text(function (d) {
+					return d.text;
+				});
+
+			//Entering and existing words
+			cloud
+				.transition()
+				.duration(600)
+				.style("font-size", function (d) {
+					return d.size + "px";
+				})
+				.attr("transform", function (d) {
+					return "translate(" + [d.x, d.y] + ")rotate(" + d.rotate + ")";
+				})
+				.style("fill-opacity", 1);
+
+			//Exiting words
+			cloud
+				.exit()
+				.transition()
+				.duration(200)
+				.style("fill-opacity", 1e-6)
+				.attr("font-size", 1)
+				.remove();
+		}
+
+		return {
+			update: function (words) {
+				d3.layout
+					.cloud()
+					.size([900, 500])
+					.words(words)
+					.padding(10)
+					//.rotate(function() { return ~~(Math.random() * 2) * 90; })
+					.rotate(0)
+					.font("Calibri")
+					.fontSize(function (d) {
+						return fontSizeScale(d.size / maxSize);
+					})
+					.rotate(function () {
+						return ~~(Math.random() * 2) * 90;
+					})
+					.on("end", draw)
+					.start();
+			},
+		};
+	}
+
+	function runFunctionsInDiv(divId) {
+		const div = document.getElementById(divId);
+		const scriptElements = div.querySelectorAll("script");
+		scriptElements.forEach((scriptElement) => {
+			const scriptContent =
+				scriptElement.innerText || scriptElement.textContent;
+			const scriptFunction = new Function(scriptContent);
+			scriptFunction();
+		});
+	}
+
+	function handleChangeDropdownLayout(id, eleId) {
+		document.querySelectorAll(".item-dropdown-" + eleId).forEach(function (el) {
+			el.style.setProperty("display", "none", "important");
+		});
+
+		document
+			.getElementById(id)
+			.style.setProperty("display", "block", "important");
+	}
+
+	function handleChangeTabsLayout(id, eleId) {
+		document.querySelectorAll(".item-tabs-" + eleId).forEach(function (el) {
+			el.style.setProperty("display", "none", "important");
+		});
+
+		document.querySelectorAll(".btn-tab-" + eleId).forEach(function (el) {
+			el.style.backgroundColor = "#f0f0f0";
+			el.style.color = "#000";
+		});
+
+		document.getElementById("btn-" + id).style.backgroundColor = "#3385d9";
+		document.getElementById("btn-" + id).style.color = "#fff";
+		document
+			.getElementById(id)
+			.style.setProperty("display", "block", "important");
+	}
+</script>

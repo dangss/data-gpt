@@ -1,0 +1,21 @@
+{% if context.text is defined %}
+<div class="title">{{context.text}}</div>
+{% endif %}
+
+<div
+	class="stack"
+	id="{{context.id}}"
+	style="flex-direction: {{context.layout}}; {{context.style}}"
+>
+	{% for context in context.data recursive %} {% if context.type == 'table' %}
+	{% include 'table_layout.html' ignore missing with context %} {% elif
+	context.type == 'stack' %} {% include 'stack_layout.html' ignore missing with
+	context %} {% elif context.type == 'html' %} {% include 'html_layout.html'
+	ignore missing with context %} {% elif context.type == 'plotly_chart' %} {%
+	include 'plotly_chart_layout.html' ignore missing with context %} {% elif
+	context.type == 'wordcloud' %} {% include 'wordcloud_layout.html' ignore
+	missing with context %} {% elif context.type == 'tabs' %} {% include
+	'tabs_layout.html' ignore missing with context %} {% elif context.type ==
+	'select_dropdown' %} {% include 'select_dropdown_layout.html' ignore missing
+	with context %} {% endif %} {% endfor %}
+</div>

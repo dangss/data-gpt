@@ -1,0 +1,157 @@
+id	parent	name
+7	0	Thời trang
+203	7	Làm đẹp
+621	7	Thời trang sao
+622	7	Mặc đẹp
+8	0	Âm nhạc
+216	8	Nhạc Việt
+232	8	Nhạc Âu Mỹ
+500	8	Nhạc Hàn
+9	0	Phim ảnh
+592	9	Phim truyền hình
+593	9	Phim chiếu rạp
+684	9	Game Show
+104	0	Đời sống
+632	104	Sự kiện
+739	104	Xu hướng
+740	104	Sống đẹp
+741	104	Giới trẻ
+746	104	Học đường
+472	0	Thể thao
+530	472	Thể thao Việt Nam
+531	472	Bóng đá Anh
+532	472	Bóng đá Tây Ban Nha
+536	472	Hậu trường
+613	472	Video bóng đá
+682	472	Bóng đá Việt Nam
+698	472	Bóng rổ
+722	472	ASIAD 2018
+733	472	Võ thuật
+745	472	eSports
+474	0	Xe
+617	474	Xe máy
+618	474	Ôtô
+734	474	Đánh giá
+735	474	Xe thể thao
+476	0	Công nghệ
+614	476	Mobile
+731	476	Internet
+732	476	Game
+478	0	Ẩm thực
+675	478	Địa điểm ăn uống
+676	478	Món ngon
+479	0	Du lịch
+649	479	Địa điểm du lịch
+650	479	Khuyến mại
+651	479	Kinh nghiệm du lịch
+652	479	Phượt
+501	0	Giáo dục
+574	501	Tuyển sinh 2020
+661	501	Du học
+662	501	Tư vấn
+503	0	Thế giới
+603	503	Quân sự
+655	503	Tư liệu
+656	503	Người Việt 4 phương
+658	503	Phân tích
+738	503	Chuyện lạ
+529	0	Nhịp sống
+477	529	TTDN
+481	529	Trắc nghiệm
+601	529	Cười
+644	531	Ngoại hạng Anh
+570	569	Khoa học
+575	569	Chuyện lạ
+653	569	Thiên nhiên
+572	0	Kinh doanh
+587	572	Tài chính
+588	572	Bất động sản
+604	572	Doanh nhân
+728	572	Tiêu dùng
+729	572	Hàng không
+748	572	Thương mại điện tử
+689	574	Đề thi đáp án THPT quốc gia và Đại học
+690	574	Đề thi thử THPT Quốc Gia
+577	576	Tin Tức
+578	576	Tường Thuật
+579	576	Bên lề sân cỏ
+580	576	Ảnh Clip
+581	576	Góc Bình Luận
+582	576	Đường Tới Euro
+583	576	Lịch Sử Euro
+584	576	Người Hâm Mộ
+585	0	Giải trí
+598	585	Sao Việt
+599	585	Sao Hollywood
+683	585	Sao Châu Á
+605	0	Xã hội
+607	605	Đô thị
+677	605	Giao thông
+730	605	Chính trị
+749	605	Nhân sự mới
+609	0	Pháp luật
+610	609	Pháp đình
+611	609	Vụ án
+624	0	Chuyên trang
+569	624	Khám phá
+638	624	Doanh nghiệp tự giới thiệu
+694	624	Bầu cử Tổng thống Mỹ 2016
+695	624	#Highlight
+696	624	#BOC
+697	624	#Trendy
+700	624	#Story
+701	624	#Kover
+703	624	SEA Games 29
+713	624	#GoodMorning
+716	624	Zalo
+737	624	SEA Games 30
+742	624	Dịch viêm phổi Corona
+750	624	Đại hội Đảng XIII
+751	624	#Hashtag
+752	624	Bầu cử Mỹ 2020
+626	0	Xuất bản
+627	626	Tin tức xuất bản
+628	626	Sách hay
+629	626	Tác giả
+634	633	Tin Ảnh
+635	633	Bóng đá
+636	633	Các môn khác
+637	633	Chân dung
+640	639	Hậu trường
+641	639	Bình luận
+642	639	Bạn đọc viết
+645	0	Sức khỏe
+484	645	Giới tính
+647	645	Tư vấn
+648	645	Thẩm mỹ
+670	645	Khỏe đẹp
+672	645	Dinh dưỡng
+673	645	Mẹ và Bé
+674	645	Bệnh thường gặp
+747	645	Gia đình
+664	663	Bóng đá
+665	663	Bộ môn khác
+666	663	Góc nhìn
+667	663	Tin ảnh
+668	663	Video
+669	663	Infographic
+686	685	Ảnh & Video
+687	685	Tường thuật
+688	685	Lịch thi đấu
+691	685	Bình luận
+692	685	Bạn đọc viết
+693	685	Tin tức
+707	702	Bạn đọc viết
+702	703	Đồng hành SEA Games
+704	703	Bình luận
+705	703	Bóng đá
+706	703	Ảnh
+709	708	Bên Lề
+710	708	Kiến thức
+711	708	Tin tức
+712	708	Tiêu điểm
+718	717	Tin tức World Cup
+719	717	Tường thuật
+720	717	Bên lề
+721	717	Góc bình luận
+736	0	Video hệ thống
